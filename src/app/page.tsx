@@ -1,101 +1,157 @@
-import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <header className="flex flex-col justify-center  items-center  ">
+      <div className="  p-20">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900">
+          UI Development Made Easy Shadcn And Radix
+        </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="flex flex-col pl-5 mt-20">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold  text-blue-900">
+            Introduction
+          </h2>
+          <p className="mt-4 text-sm md:text-base lg:text-lg">
+            Radix is an open sourse-UI component library for building
+            high-quality, accessible design systems and webs applications.
+          </p>
+
+          <h2 className="mt-10 text-xl md:text-2xl lg:text-3xl font-semibold text-green">
+            Why Choose Radix UI
+          </h2>
+          <p className="mt-4 text-sm md:text-base lg:text-lg">
+            Radix UI offers zero styles components and functionality,giving you
+            complete control over styling.
+          </p>
+          <h2 className="mt-10 mb-8 text-xl md:text-2xl lg:text-3xl font-semibold">
+            Key Features
+          </h2>
+          <h2 className="font-bold">Accessibility</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI is designed for screen readers and keyboard navigation,
+            making apps unable for everyone
+          </p>
+          <h2 className="font-bold">Performance</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI is built using modern JavaScript, CSS, and Web APIs, making
+            it fast and efficient
+          </p>
+          <h2 className="font-bold">Customization</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI provides unstyled components, utilities, and patterns to
+            help you build accessible and maintainable interfaces.
+          </p>
+          <h2 className="font-bold">unstyled</h2>
+          <p className=" mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI offers a wide range of components, without default styles,
+            and utilities to customize the appearance of the component and
+            allowing full design control
+          </p>
+          <h2 className="font-bold">Composition</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI Easy to combine components for complex UI.
+          </p>
+          <h2 className="font-bold ">Lightweight</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Radix UI Small library size for better performance,and making it
+            easy to include in your project.
+          </p>
+          <h2 className="font-bold ">Radix UI</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            <strong>PROPS</strong>: Flexibility Customization
+          </p>
+          <h2 className="mt-5  text-3xl md:text-4xl lg:text-5xl  italic  text-blue-900">
+            Installation
+          </h2>
+          <p className="mt-4 text-sm md:text-base lg:text-lg">
+            You can install Radix UI via npm:
+          </p>
+          <code className="mt-5 text-sm md:text-base lg:text-lg bg-black text-white p-4 rounded-lg">
+            npm install @radix-ui/react
+          </code>
+          <Link
+            href="https://www.radix-ui.com/primitives/docs/overview/introduction"
+            className="mt-5 text-sm md:text-base lg:text-lg bg-black text-white p-4 rounded-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            {" "}
+            Click Here For Radix UI Docs
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="mt-20">
+          <h2 className="mb-10 text-4xl md:text-5xl lg:text-6xl font-bold  text-blue-900 ">
+            Shadcn UI Introduction
+          </h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Beautifully designed components that you can copy and paste into
+            your applications. This is NOT a component library. It`s a
+            collection of re-useble components. pick the components you
+            need.Copy and paste the code into your project and customize to your
+            needs.The code is yours.
+          </p>
+          <h2 className="font-bold">Why Choose Shadcn UI</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Shadcn UI offers a wide range of components, without default styles,
+            and utilities to help you build accessible and maintainable
+            interfaces.
+          </p>
+          <h2 className="font-bold">What is Shadcn UI?</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Shadcn UI is an open source customized UI component library designed
+            to hely developer create visually appealing.
+          </p>
+          <h2 className="font-bold">Key Features</h2>
+          <h2 className="font-bold">Customibility</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Provides unstyled components ,allowing developers full control over
+            the design.
+          </p>
+          <h2 className="font-bold">Flexible Design</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Easy adapation to different design systems and style
+          </p>
+          <h2 className="font-bold">Developer Experience</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Provides a developer experience that is easy to understand and
+            maintain.
+          </p>
+          <h2 className="font-bold">Lightweight</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Library is designed to be Lightweight,enhancing application
+            performance .
+          </p>
+          <h2 className="font-bold">Integration with Modern Frameworks.</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            Shadcn UI is designed to work seamlessly with popular modern
+            frameworks like React, Vue, Angular, and more.
+          </p>
+          <h2 className="font-bold ">Shadcn UI</h2>
+          <p className="mb-4 text-sm md:text-base lg:text-lg">
+            <strong>PROPS</strong>: Quick Setup, Tailwind Integration,pre designed components
+          </p>
+          <div className="flex flex-col">
+          <h2 className="mt-5  text-3xl md:text-4xl lg:text-5xl  italic  text-blue-900">
+            Installation
+          </h2>
+          <p className="mt-4 text-sm md:text-base lg:text-lg">
+            You can install Shadcn UI via npm:
+          </p>
+          <code className="mt-5 text-sm md:text-base lg:text-lg bg-black text-white p-4 rounded-lg">
+          npx shadcn@latest init
+
+          </code>
+          <Link
+            href="https://ui.shadcn.com/docs"
+            className="mt-5 text-sm md:text-base lg:text-lg bg-black text-white p-4 rounded-lg"
+          >
+            {" "}
+            Click Here For Shadcn UI Docs
+          </Link>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }
